@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {
   StyleSheet,
   Image,
@@ -13,24 +13,22 @@ import {detailsIcon} from '../components/salon';
 import {height, ITEM_HEIGHT, SPACING, width} from './SalonList';
 import * as Animatable from 'react-native-animatable';
 
-const TOP_HEADER_HEIGHT = height * 0.3;
+const TOP_HEADER_HEIGHT = height * 0.2;
 const DURATION = 400;
 const SalonDetails = ({navigation, route}) => {
   const {item} = route.params;
+  useEffect(() => {
+    navigation.setOptions({
+      headerTitle: 'hola',
+      //   headerStyle: {backgroundColor: item.color},
+      //   headerTintColor: 'white',
+      headerTitleStyle: {fontSize: 28},
+    });
+  }, []);
   return (
     <View style={{flex: 1, backgroundColor: item.color}}>
-      <StatusBar backgroundColor={item.color} />
-      <TouchableOpacity
-        style={{
-          padding: 12,
-          position: 'absolute',
-          top: SPACING * 2,
-          left: SPACING,
-          zIndex: 2,
-        }}
-        onPress={() => navigation.goBack()}>
-        <AntDesign name="arrowleft" size={28} />
-      </TouchableOpacity>
+      {/* <StatusBar backgroundColor={item.color} /> */}
+
       <View
         style={[
           StyleSheet.absoluteFillObject,
