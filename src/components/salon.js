@@ -104,6 +104,6 @@ export default data.map((item, index) => ({
   categories: [...Array(3).keys()].map(() => ({
     key: faker.datatype.uuid(),
     title: faker.name.jobType(),
-    subcats: [...Array(3).keys()].map(() => faker.name.jobType),
+    subcats: [...Array(3).keys()].map(() => faker.name.jobType()),
   })),
 }));
