@@ -1,3 +1,4 @@
 import SalonDetails from './SalonDetails';
 import SalonList from './SalonList';
-export {SalonDetails, SalonList};
+import VanillaAnimation from './VanillaAnimation';
+export {SalonDetails, SalonList, VanillaAnimation};

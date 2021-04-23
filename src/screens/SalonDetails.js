@@ -13,15 +13,15 @@ import {detailsIcon} from '../components/salon';
 import {height, ITEM_HEIGHT, SPACING, width} from './SalonList';
 import * as Animatable from 'react-native-animatable';
 
-const TOP_HEADER_HEIGHT = height * 0.2;
+const TOP_HEADER_HEIGHT = height * 0.22;
 const DURATION = 400;
 const SalonDetails = ({navigation, route}) => {
   const {item} = route.params;
   useEffect(() => {
     navigation.setOptions({
-      headerTitle: 'hola',
+      headerTitle: 'Details ',
       //   headerStyle: {backgroundColor: item.color},
-      //   headerTintColor: 'white',
+      headerTintColor: 'black',
       headerTitleStyle: {fontSize: 28},
     });
   }, []);
