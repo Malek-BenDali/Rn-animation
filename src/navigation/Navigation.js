@@ -2,7 +2,7 @@ import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from 'react-native-screens/native-stack';
 import {createDrawerNavigator} from '@react-navigation/drawer';
-import {SalonDetails, SalonList, VanillaAnimation} from '../screens';
+import {SalonDetails, SalonList, VanillaAnimation, Donut} from '../screens';
 
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -33,6 +33,7 @@ export default () => (
     <Drawer.Navigator initialRouteName="Home">
       <Drawer.Screen name="Home" component={Salon} />
       <Drawer.Screen name="Notifications" component={MoveBall} />
+      <Drawer.Screen name="Donut" component={Donut} />
     </Drawer.Navigator>
   </NavigationContainer>
 );
