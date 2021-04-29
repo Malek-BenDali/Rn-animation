@@ -4,7 +4,7 @@ import Donut from './Donut';
 
 const index = () => {
   return (
-    <View style={{flex: 1, justifyContent: 'center'}}>
+    <View style={{flex: 1, backgroundColor: 'white', justifyContent: 'center'}}>
       <View
         style={{
           flexDirection: 'row',

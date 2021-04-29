@@ -6,10 +6,10 @@ const AnimatedCircle = Animated.createAnimatedComponent(Circle);
 const AnimatedInput = Animated.createAnimatedComponent(TextInput);
 
 const Donut = ({
-  percentage = 150,
-  radius = 40,
+  percentage = 200,
+  radius = 150,
   strokeWidth = 10,
-  duration = 500,
+  duration = 2000,
   color = 'tomato',
   delay = 500,
   textColor,
@@ -45,8 +45,9 @@ const Donut = ({
         });
       }
       if (inputRef?.current) {
+        const currentPenrcentage = (100 * v.value) / max;
         inputRef.current.setNativeProps({
-          text: `${Math.round(v.value)}%`,
+          text: `${Math.round(currentPenrcentage)}%`,
         });
       }
     });
