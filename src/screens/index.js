@@ -1,5 +1,6 @@
 import SalonDetails from './SalonDetails';
 import SalonList from './SalonList';
-import VanillaAnimation from './VanillaAnimation';
+import FadeIn from './FadeIn';
 import Donut from './Donut';
-export {SalonDetails, SalonList, VanillaAnimation, Donut};
+import Pangesture from './Pangesture';
+export {SalonDetails, Pangesture, SalonList, FadeIn, Donut};
