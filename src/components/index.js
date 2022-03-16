@@ -1,2 +1,3 @@
 import StyleGuide from './StyleGuide';
-export {StyleGuide};
+import Page from './Page';
+export {StyleGuide, Page};

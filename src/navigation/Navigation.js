@@ -2,7 +2,14 @@ import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from 'react-native-screens/native-stack';
 import {createDrawerNavigator} from '@react-navigation/drawer';
-import {SalonDetails, SalonList, FadeIn, Donut, Pangesture} from '../screens';
+import {
+  SalonDetails,
+  SalonList,
+  FadeIn,
+  Donut,
+  Pangesture,
+  Scroll,
+} from '../screens';
 
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -25,6 +32,7 @@ export default () => (
       <Drawer.Screen name="Fade In" component={FadeIn} />
       <Drawer.Screen name="Donut" component={Donut} />
       <Drawer.Screen name="Pangesture" component={Pangesture} />
+      <Drawer.Screen name="Scroll" component={Scroll} />
     </Drawer.Navigator>
   </NavigationContainer>
 );

@@ -3,4 +3,5 @@ import SalonList from './SalonList';
 import FadeIn from './FadeIn';
 import Donut from './Donut';
 import Pangesture from './Pangesture';
-export {SalonDetails, Pangesture, SalonList, FadeIn, Donut};
+import Scroll from './Scroll';
+export {Scroll, SalonDetails, Pangesture, SalonList, FadeIn, Donut};
