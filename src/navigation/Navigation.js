@@ -9,6 +9,7 @@ import {
   Donut,
   Pangesture,
   Scroll,
+  Zoom,
 } from '../screens';
 
 const Stack = createNativeStackNavigator();
@@ -33,6 +34,7 @@ export default () => (
       <Drawer.Screen name="Donut" component={Donut} />
       <Drawer.Screen name="Pangesture" component={Pangesture} />
       <Drawer.Screen name="Scroll" component={Scroll} />
+      <Drawer.Screen name="zoom" component={Zoom} />
     </Drawer.Navigator>
   </NavigationContainer>
 );
