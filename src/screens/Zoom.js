@@ -8,7 +8,7 @@ import Animated, {
   withTiming,
 } from 'react-native-reanimated';
 
-//const {width, height} = Dimensions.get();
+const {width, height} = Dimensions.get('window');
 
 const Zoom = () => {
   const uri =
@@ -29,7 +29,17 @@ const Zoom = () => {
   });
   const rStyle = useAnimatedStyle(() => {
     return {
-      transform: [{translateX: focalX.value}, {translateY: focalY.value}],
+      transform: [
+        {translateX: focalX.value},
+        {translateY: focalY.value},
+        {translateX: -width / 2},
+        {translateY: -height / 2},
+        {scale: scale.value},
+        {translateX: -focalX.value},
+        {translateY: -focalY.value},
+        {translateX: +width / 2},
+        {translateY: +height / 2},
+      ],
     };
   });
   const rFocalPoint = useAnimatedStyle(() => {
